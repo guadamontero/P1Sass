@@ -1,0 +1,42 @@
+/* -FOOTER- */
+
+%redes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border-radius: 50%;
+  border: transparent;
+  height: 2.4em;
+  width: 2.4em;
+  box-shadow: -2px 0 0 1px $shadow;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 3rem;
+  .copy {
+    display: flex;
+    gap: 0.5rem;
+  }
+  .redes {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 2rem;
+    img {
+      width: 1rem;
+    }
+    .facebook {
+      @extend %redes; 
+    }
+    .instagram {
+      @extend %redes;
+    }
+    .twitter {
+      @extend %redes;
+    }
+  }
+}

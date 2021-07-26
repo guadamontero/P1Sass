@@ -1,0 +1,76 @@
+/* -MAIN- */
+
+%card-style {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  h3{
+    padding: 1rem 0rem 0.5rem 2rem;
+  }
+  p {
+    padding: 0rem 2rem 2rem 2rem;
+  }
+}
+
+%card-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border-radius: 50%;
+  border: 1px solid #000;
+  height: 3em;
+  width: 3em;
+  box-shadow: -2px 0 0 2px $shadow;
+}
+
+main {
+  padding: 3rem;
+  .heroe{
+    display: flex;
+    &-texto {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      width: 45vw;
+      h2{
+        span{
+          background-color:$shadow;
+          height: 30px;
+          display: inline-block;
+          top: -20px;
+        }
+      }
+      .p-container{
+        text-align: justify;
+        line-height: 2.5rem;
+        color: $color-primary;
+      }
+      .btn-container {
+        display: flex;
+        gap: 2rem;
+        input {
+          @include btn($bg-primary);
+        }
+      }
+    }
+    &-imagen {
+      @include fondo-header(#fff url(../assets/wireframe.svg) no-repeat)
+    }
+  }
+  .card-container {
+    display: flex;
+    gap: 5rem;
+    .card-contenido {
+      @extend %card-style;
+      padding-left: 1rem;
+      background-color: $bg-secondary;
+      @include shadow-card ($shadow);
+      .card-number {
+        margin-top: 1rem;
+        @extend %card-number;
+      }
+    }
+  }
+}
+
