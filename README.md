@@ -1,3 +1,3 @@
 # Sass
 
-https://guadamontero.github.io/Sass/
+https://guadamontero.github.io/P1Sass/
