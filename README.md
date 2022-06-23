@@ -1,3 +1,3 @@
 # Sass
 
-https://guadamontero.github.io/P1Sass/
+https://guadamontero.github.io/SASS-masterDev/
